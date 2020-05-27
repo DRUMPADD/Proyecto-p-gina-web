@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/Activador.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor-form">
+        <div>
+            <span class="toggle"><h3>Crear cuenta</span>
+        </div>
+        <div class="formulario">
+            <h2><strong>Iniciar sesión</strong></h2>
+            <form method="POST" action="ValidarDatos.php">
+                <input type="text" name="txtMatricula" placeholder="Matricula">
+                <input type="password" name="txtContraseña" placeholder="Contraseña">
+                <input type="checkbox" name="CheckAdmin" id="switch">Administrador &nbsp;<label for="switch" class="lbl"></label>
+                <br><br>
+                <input type="submit" value="Iniciar sesión">
+            </form>
+        </div>
+        <br>
+        <div class="formulario">
+            <h2><strong>Crear cuenta</strong></h2>
+            <form method="POST" action="Registro.php">
+                <input type="text" placeholder="Nombre" name="Nombre" pattern="[a-zA-Z] {50}">
+                <input type="text" placeholder="Apellido paterno" name="ApellidoPaterno" pattern="[a-aA-Z] {50}">
+                <input type="text" placeholder="Apellido materno" name="ApellidoMaterno" pattern="[a-aA-Z] {50}">
+                <input type="number" placeholder="Edad" name="Edad">
+                <input type="text" placeholder="Telefono" name="Telefono">
+                <input type="text" placeholder="País de residencia" name="PaisResidencia" pattern="[a-zA-Z] {40}">
+                <input type="text" placeholder="Matricula" name="Matricula">
+                <input type="text" placeholder="Carrera" name="Carrera" pattern="[a-zA-Z] {30}">
+                <input type="email" placeholder="Correo" name="Correo" pattern="[a-aA-Z@gmail@hotmail@outlook] {50}">
+                <input type="password" placeholder="Contraseña" name="Contraseña" pattern="[a-aA-Z0-9] {50}">
+                <input type="submit" name="registrar" value="Registrarse">
+            </form>
+        </div>
+
+        <div class="reset-password">
+            <a href="#"><strong>Olvidaste tu contraseña?</strong></a>
+        </div>
+    </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

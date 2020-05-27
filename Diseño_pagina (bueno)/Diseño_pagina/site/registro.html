@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Inicio</title>
+        <script type="text/javascript">
+            function validar(){
+                var usuario = document.getElementById("Usuario").value;
+                var contraseña = document.getElementById("Contraseña").value;
+
+                if(usuario == "Erick" && contraseña == "12345"){
+                    alert('Usuario y contraseña válidos');
+                }else{
+                    alert('Verifique sus datos');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><label>Usuario</label></td>
+                <td><input type="text" name="Usuario" id="Usuario"></td>
+            </tr>
+            <tr>
+                <td><label>Contraseña</label></td>
+                <td><input type="password" name="Contraseña" id="Contraseña"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" name="Verificar" id="Verificar" onclick="validar()" value="Ingresar datos"></td>
+            </tr>
+        </table>
+    </body>
+</html>
